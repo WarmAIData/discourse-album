@@ -1,0 +1,6 @@
+{{#if siteSettings.album_enabled}}
+  <LinkTo
+    @route="full-page-search"
+    @query={{hash q="with:images @me"}}
+  >{{d-icon "image"}} {{i18n "album.title"}}</LinkTo>
+{{/if}}
